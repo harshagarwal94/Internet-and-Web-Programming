@@ -1,0 +1,59 @@
+<html>
+<head>
+<title> Canvas</title>
+</head>
+<body>
+<canvas id="mycanvas"
+width="500"
+height="250";>
+</canvas>
+
+<canvas id="mycanvas1" width="200" height="100" style="border:10px solid red ;">
+</canvas>
+<script>
+var g=document.getElementById("mycanvas")
+var subash=g.getContext("2d");
+
+subash.shadowBlur=20;
+subash.shadowColor="yellow";
+subash.fillStyle="red";
+subash.fillRect(30,20,100,80);
+
+
+subash.font="30px Arial";
+subash.fillText("HTML Canvas", 170,150);
+
+
+subash.beginPath();
+subash.arc(250,120,120,0,2 * 3.14);
+subash.stroke();
+
+
+var grd=subash.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"yellow");
+grd.addColorStop(0,"red");
+subash.fillStyle=grd;
+subash.fillRect(50,150,300,80);
+
+
+
+subash.rotate(20*Math.PI / 180);
+subash.fillRect(50,150,300,80);
+
+
+var g=document.getElementById("mycanvas1")
+var subash=g.getContext("2d");
+subash.moveTo(0,0);
+subash.lineTo(200,100);
+subash.stroke();
+
+
+var g=document.getElementById("mycanvas1")
+var subash=g.getContext("2d");
+subash.font="30px Arial";
+subash.fillText("Hello world",10,50);
+
+</script>
+</body>
+
+</html>
