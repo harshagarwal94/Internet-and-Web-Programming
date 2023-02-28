@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<!--After typing save this file with the filename.html andyou can see the ouput again if you want to edit rightclick open with notepad save it and run it-->
+<html>
+<head>
+<title>My first Program</title>
+</head>
+<body>
+<i>
+<b>
+<u>
+<s>
+<h1>
+<p style="color:red;font-size:20px;margin-left:20px">Welcome to Internet 
+</i>
+</b>
+</u>
+</s>
+<h2>
+<p style="color:red;margin-left:20px">Welcome to Internet 
+<h3>
+<p style="color:red;margin-left:20px">Welcome to Internet 
+<h4>
+<p style="color:red;margin-left:20px;background-color:Purple">Welcome to Internet Programming</p>
+</body>
+</html
