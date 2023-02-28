@@ -1,0 +1,50 @@
+<html>
+<body>
+    <canvas id="123"
+            width="500"
+            height="250" ;>
+
+<!--style="border:2px solid #d3d3d3;">-->
+
+      </canvas>
+    <script>
+        var g = document.getElementById("123");
+        var geeks = g.getContext("2d");
+
+
+        geeks.shadowBlur = 20;
+        geeks.shadowColor = "yellow";
+        geeks.fillStyle = "red";
+        geeks.fillRect(30, 20, 100, 80);
+
+
+geeks.font = "30px Arial";
+geeks.fillText("GeeksForGeeks", 170, 50);
+
+        geeks.beginPath();
+        geeks.arc(200, 100, 50, 0, 2 * 3.14);
+        geeks.stroke();
+
+
+
+var grd = geeks.createLinearGradient(0, 0, 200, 0);
+        grd.addColorStop(0, "yellow");
+        grd.addColorStop(1, "grey");
+        geeks.fillStyle = grd;
+        geeks.fillRect(50, 50, 300, 80);
+
+
+geeks.rotate(20 * Math.PI / 180);
+        geeks.fillRect(100, 20, 100, 50);
+
+</script>
+      
+
+</body>
+</html>
+
+
+
+
+
+
