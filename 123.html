@@ -1,0 +1,79 @@
+<html>
+<body>
+    <canvas id="123"
+   width="500"
+            height="250" ;>
+      </canvas>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+</canvas>
+
+    <script>
+        var g = document.getElementById("123");
+        var geeks = g.getContext("2d");
+
+
+        geeks.shadowBlur = 20;
+        geeks.shadowColor = "yellow";
+        geeks.fillStyle = "red";
+        geeks.fillRect(30, 20, 100, 80);
+
+
+geeks.font = "30px Arial";
+geeks.fillText("Geeks For Geeks", 170, 50);
+
+geeks.beginPath();
+        geeks.arc(200, 200, 50, 0, 2 * 3.14);
+        geeks.stroke();
+
+
+var grd = geeks.createLinearGradient(0, 0, 200, 0);
+        grd.addColorStop(0, "yellow");
+        grd.addColorStop(1, "grey");
+        geeks.fillStyle = grd;
+        geeks.fillRect(200, 100, 300, 80);
+
+
+geeks.rotate(20 * Math.PI / 180);
+        geeks.fillRect(100, 20, 100, 50);
+
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0, 0);
+ctx.lineTo(200, 100);
+ctx.stroke();
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("Hello World", 10, 50);
+
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createLinearGradient(0, 0, 200, 0);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
+
+
+
+
+</script>
+
+
+      
+
+</body>
+</html>
+
+
+
+
+
+

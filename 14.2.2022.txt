@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		h1 {
+			color: green;
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+		<h1>Internet and Web Programming</h1>
+
+		<p>Video Sample</p>
+
+		<video width="400" height="350" controls preload>
+			<source src="C:\Users\S\Downloads\v.mp4" type="video/mp4">
+			
+		</video>
+	</center>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+ <center>
+<p>Audio Sample</p>
+  
+        <audio controls autoplay>
+            <source src=
+"C:\Users\S\Downloads\mp3.mp3"
+                type="audio/mp3">
+  
+        </audio>
+    </center>
+
+
+    <center>
+<p>Embed Sample</p>
+  
+        <embed
+            src=
+"C:\Users\S\Downloads\mp3.mp3">
+    </center>
+
+
+ <center>
+     
+  
+        <h2>Source Tag</h2>
+  
+        <audio controls>
+            <source src="C:\Users\S\Downloads\mp3.mp3" type="audio/mp3">
+        </audio>
+    </center>
+
+<center>
+       
+        <h2>Track Tag: Both Audio and Video</h2>
+  
+        <video width="300" height="300" controls>
+            <source src="C:\Users\S\Downloads\v.mp4" type="video/mp4">
+            <track src=
+"C:\Users\S\Downloads\mp3.mp3"
+                kind="subtitle" srclang="en"
+                label="English">
+        </video>
+    </center>
+</body>
+
+</html>
